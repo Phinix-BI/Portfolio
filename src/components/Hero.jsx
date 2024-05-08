@@ -1,13 +1,15 @@
-import { curve, heroBackground, robot} from "../assets";
+import { curve, heroBackground} from "../assets";
 import Button from "./Button";
 import Section from "./Section";
-import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
+import { BackgroundCircles, Gradient } from "./design/Hero";
+// eslint-disable-next-line no-unused-vars
 import { ScrollParallax } from "react-just-parallax";
 import { useRef } from "react";
 import Type from "./Type";
 import programmer from "../assets/programmer.webp";
 import q1 from "../assets/q1.png";
 import q2 from "../assets/q2.png";
+// import CompanyLogos from "./CompanyLogos";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -85,9 +87,10 @@ const Hero = () => {
           </div>
           <BackgroundCircles />
         </div>
-        
+     
       </div>
-      <BottomLine />
+      {/* <BottomLine /> */}
+      {/* <CompanyLogos className="hidden relative z-10 mt-20 lg:block" /> */}
     </Section>
   );
 };
