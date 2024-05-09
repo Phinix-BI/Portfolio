@@ -45,7 +45,7 @@ const Hero = () => {
               <div><img src={q1} width={20} /></div> 
            <div className="mx-2 my-2 font-bold">
                <p>I don&apos;t need a keyboard; I just type code directly</p>
-               <p className="flex">into the air. Call me the airbender of programming.
+               <p className="flex">into the air . Call me the airbender of programming.
                 <div className="ml-2"><img src={q2} width={20} /></div>
                 </p>
              </div>
