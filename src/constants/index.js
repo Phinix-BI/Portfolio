@@ -165,7 +165,7 @@ export const projectsData = [
     text: "Feedzzy is an ongoing project focused on streamlining the entire online food delivery process, from ordering to delivery.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     liveUrl: "https://feedzzy-xi.vercel.app",
-    imageUrl: "./src/assets/ProjectImages/feedzzy2.jpeg",
+    imageUrl: "./feedzzy2.jpeg",
     githubLink : "https://github.com/Phinix-BI/Feedzzy",
     ongoing : true
   },
