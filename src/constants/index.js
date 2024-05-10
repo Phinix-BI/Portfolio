@@ -167,7 +167,7 @@ import {
     id: "2",
     title: "News Portal",
     text: "Welcome to NewsPortal, your daily news hub. Admins can effortlessly manage posts, including scheduling, updating, creating, and deleting, all via the Admin Panel.",
-    backgroundUrl: ".benefits/card-3.svg",
+    backgroundUrl: "./benefits/card-3.svg",
     
     imageUrl: "./ProjectImages/newsPortal1.jpg",
     githubLink : "https://github.com/Phinix-BI/News-Portal-U.V-",
