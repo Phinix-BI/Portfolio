@@ -88,3 +88,10 @@
   @apply rotate-[-360deg]
 }
 
+@layer utilities {
+  .border-gradient {
+    border-width: 2px; /* Adjust border width as needed */
+    border-image: linear-gradient(to right, #ff7e5f, #feb47b, #ff7e5f);
+    border-image-slice: 1;
+  }
+}

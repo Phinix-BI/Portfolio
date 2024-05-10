@@ -45,13 +45,13 @@ import {
     },
     {
       id: "1",
-      title: "Projects",
-      url: "#projects",
+      title: "Skills",
+      url: "#skills",
     },
     {
       id: "2",
-      title: "Services",
-      url: "#services",
+      title: "Projects",
+      url: "#projects",
     },
     {
       id: "3",
@@ -177,7 +177,8 @@ export const projectsData = [
     imageUrl:"./src/assets/ProjectImages/MindCarephoto.jpg",
     light: true,
     githubLink : "https://github.com/Phinix-BI/Mind-Care",
-    ongoing : false
+    ongoing : false,
+    Demo : "https://youtu.be/-sJWkzOurbw?si=qnbgq_ou20b0KOZ-"
   },
   {
     id: "2",
@@ -219,5 +220,38 @@ export const projectsData = [
     imageUrl:"./src/assets/ProjectImages/drumkit1.webp",
     githubLink : "https://github.com/Phinix-BI/DrumKit",
     ongoing : false
+  },
+];
+
+export const socials = [
+  {
+    id: "0",
+    title: "Discord",
+    iconUrl: discordBlack,
+    url: "https://discordapp.com/users/phinix-bi",
+  },
+  {
+    id: "1",
+    title: "Twitter",
+    iconUrl: twitter,
+    url: "https://twitter.com/Phinix_BI",
+  },
+  {
+    id: "2",
+    title: "LinkedIn",
+    iconUrl: instagram,
+    url: "https://www.linkedin.com/in/1biswajitdey/",
+  },
+  {
+    id: "3",
+    title: "Github",
+    iconUrl: './src/assets/ProjectImages/githubLogo.svg',
+    url: "https://github.com/Phinix-BI",
+  },
+  {
+    id: "4",
+    title: "Email",
+    iconUrl: facebook,
+    url: "#",
   },
 ];

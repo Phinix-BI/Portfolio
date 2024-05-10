@@ -4,7 +4,7 @@ import Section from "./Section";
 
 import { GradientLight } from "./design/Benefits";
 import ClipPath from "../assets/svg/ClipPath";
-
+import Arrow from "../assets/svg/Arrow";
 
 
 function Project() {
@@ -14,13 +14,16 @@ function Project() {
   return (
     <Section className="pt-[10rem] pb-[5rem] -mt-[5rem] " crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="projects">
       <div className="container relative z-2">
+        
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="The Projects That Helped Me Grow..."
+          title="The Projects That Helped "
+          subTitle="Me Grow..."
         />
 
         <div className="flex flex-wrap gap-10 mb-10">
           {projectsData.map((item) => (
+            
             <div
               className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem]"
               style={{
@@ -77,6 +80,15 @@ function Project() {
                       </div>
                     )
                   }
+
+                  {item.Demo && (
+                    
+                    <div className="ml-auto font-code text-md font-bold text-n-1 uppercase tracking-wider flex">
+                      <a href={item.Demo} target="_blank">
+                        <div className="flex">Demo <Arrow /></div>
+                      </a>
+                    </div>
+                  )}
                   
                 </div>
               </div>

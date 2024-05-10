@@ -73,7 +73,7 @@ const Header = () => {
         >
           New account
         </a> */}
-        <Button className="hidden lg:flex" href="#resume">
+        <Button className="hidden lg:flex" href="https://drive.google.com/file/d/1PJjYdpfJpEQqU_KyjNX3mSLnw-8wwY5e/view?usp=sharing">
           Resume
         </Button>
 
