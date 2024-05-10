@@ -1,38 +1,21 @@
 /* eslint-disable no-unused-vars */
 import {
-    benefitIcon1,
-    benefitIcon2,
-    benefitIcon3,
-    benefitIcon4,
-    benefitImage2,
-    chromecast,
-    disc02,
-    discord,
+   
     discordBlack,
     facebook,
-    figma,
+   
     file02,
-    framer,
+    
     homeSmile,
     instagram,
     notification2,
     notification3,
     notification4,
-    notion,
-    photoshop,
+    
     plusSquare,
-    protopie,
-    raindrop,
-    recording01,
-    recording03,
-    roadmap1,
-    roadmap2,
-    roadmap3,
-    roadmap4,
+   
     searchMd,
-    slack,
-    sliders04,
-    telegram,
+    
     twitter,
     yourlogo,
   } from "../assets";
@@ -73,11 +56,11 @@ import {
   ];
   export const heroIcons = [homeSmile, file02, searchMd, plusSquare];
 
-export const notificationImages = [notification4, notification3, notification2];
+  export const notificationImages = [notification4, notification3, notification2];
 
-export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
+  export const companyLogos = [yourlogo, yourlogo, yourlogo, yourlogo, yourlogo];
 
-export const skills = [
+  export const skills = [
   {
     id : 0,
     title : 'React',
@@ -138,7 +121,7 @@ export const skills = [
 
 ]
 
-export const Tools = [
+  export const Tools = [
 
   {
     title : 'VS Code',
@@ -158,14 +141,14 @@ export const Tools = [
   }
 ]
 
-export const projectsData = [
+  export const projectsData = [
   {
     id: "0",
     title: "Feedzzy",
     text: "Feedzzy is an ongoing project focused on streamlining the entire online food delivery process, from ordering to delivery.",
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    backgroundUrl: "./benefits/card-2.svg",
     liveUrl: "https://feedzzy-xi.vercel.app",
-    imageUrl: "./feedzzy2.jpeg",
+    imageUrl: "./ProjectImages/feedzzy2.jpeg",
     githubLink : "https://github.com/Phinix-BI/Feedzzy",
     ongoing : true
   },
@@ -173,8 +156,8 @@ export const projectsData = [
     id: "1",
     title: "Mind Care",
     text: "Introducing MindCare: Mental Health Solution for GDSC. With AI chat, voice assessments, and appointment booking, we're redefining mental health support.",
-    backgroundUrl: "./src/assets/benefits/card-1.svg",
-    imageUrl:"./src/assets/ProjectImages/MindCarephoto.jpg",
+    backgroundUrl: "./benefits/card-1.svg",
+    imageUrl:"./ProjectImages/MindCarephoto.jpg",
     light: true,
     githubLink : "https://github.com/Phinix-BI/Mind-Care",
     ongoing : false,
@@ -184,9 +167,9 @@ export const projectsData = [
     id: "2",
     title: "News Portal",
     text: "Welcome to NewsPortal, your daily news hub. Admins can effortlessly manage posts, including scheduling, updating, creating, and deleting, all via the Admin Panel.",
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    backgroundUrl: ".benefits/card-3.svg",
     
-    imageUrl: "./src/assets/ProjectImages/newsPortal1.jpg",
+    imageUrl: "./ProjectImages/newsPortal1.jpg",
     githubLink : "https://github.com/Phinix-BI/News-Portal-U.V-",
     ongoing : false
   },
@@ -194,9 +177,9 @@ export const projectsData = [
     id: "3",
     title: "Portfolio",
     text: "Explore the project within the project! Delve into the Portfolio section of my portfolio website, where I've curated a collection of my best work, reflecting my skills.",
-    backgroundUrl: "./src/assets/benefits/card-4.svg",
+    backgroundUrl: "./benefits/card-4.svg",
     liveUrl :"https://phinix-bi.vercel.app/",
-    imageUrl: "./src/assets/ProjectImages/portfolio3.jpg",
+    imageUrl: "./ProjectImages/portfolio3.jpg",
     light: true,
     githubLink : "https://github.com/Phinix-BI/Portfolio",
     ongoing : false
@@ -205,9 +188,9 @@ export const projectsData = [
     id: "4",
     title: "Layers - Ecommerce clone",
     text: "It's a frontend clone of an ecommerce site. It is made using normal html,css and js.",
-    backgroundUrl: "./src/assets/benefits/card-5.svg",
+    backgroundUrl: "./benefits/card-5.svg",
     liveUrl: "https://layerscloneshop.netlify.app/",
-    imageUrl:"./src/assets/ProjectImages/layers2.png",
+    imageUrl:"./ProjectImages/layers2.png",
     githubLink : "https://github.com/Phinix-BI/layers-clone-site",
     ongoing : false
   },
@@ -215,9 +198,9 @@ export const projectsData = [
     id: "5",
     title: "Drum Kit",
     text: "It's a free time project where you can play drum sets and reduce your stress and make some beautiful tune.",
-    backgroundUrl: "./src/assets/benefits/card-6.svg",
+    backgroundUrl: "./benefits/card-6.svg",
     liveUrl: "https://drumkitbyme.netlify.app/",
-    imageUrl:"./src/assets/ProjectImages/drumkit1.webp",
+    imageUrl:"./ProjectImages/drumkit1.webp",
     githubLink : "https://github.com/Phinix-BI/DrumKit",
     ongoing : false
   },
@@ -245,7 +228,7 @@ export const socials = [
   {
     id: "3",
     title: "Github",
-    iconUrl: './src/assets/ProjectImages/githubLogo.svg',
+    iconUrl: './ProjectImages/githubLogo.svg',
     url: "https://github.com/Phinix-BI",
   },
   {

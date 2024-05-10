@@ -39,7 +39,7 @@ function Project() {
                 <a href={item.githubLink} target="_blank" >
 
                   <img
-                    src="./src/assets/ProjectImages/githubLogo.svg"
+                    src="./ProjectImages/githubLogo.svg"
                     width={48}
                     height={48}
                     alt={item.title}
@@ -71,7 +71,7 @@ function Project() {
                         )}
                         <a href={item.liveUrl} target="_blank">
                           <img
-                            src="./src/assets/ProjectImages/link.png"
+                            src="./ProjectImages/link.png"
                             width={26}
                             height={26}
                             alt={item.title}
