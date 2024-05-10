@@ -6,10 +6,10 @@ import GitHubCalendar from "react-github-calendar";
 function Tools() {
     const theme = {
         light: ['#858DFF', '#AC6AFF', '#FFC876', '#FF776F', '#7ADB78'],
-        dark: ['#B4B4B8', '#7469B6', '#AD88C6', '#BC7FCD', '#86469C']
+        dark: ['#161b22', '#0a3069', '#0969da', '#0969da', '#b6e3ff']
     }
   return (
-    <Section className="pt-[5rem] pb-[5rem] -mt-[5rem] " crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="tools">
+    <Section className="pt-[5rem]  pb-[1rem] lg:pb-[5rem] -mt-[5rem] " crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="tools">
     <div className='container'> 
       <div className='my-4'>
                 

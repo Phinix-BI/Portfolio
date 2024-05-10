@@ -12,16 +12,16 @@ function Project() {
  
 
   return (
-    <Section className="pt-[10rem] pb-[5rem] -mt-[5rem] " crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="projects">
+    <Section className=" pt-[4rem] md:pt-[10rem] pb-[5rem] -mt-[5rem] " crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="projects">
       <div className="container relative z-2">
-        
+        <div className="justify-center text-center">
         <Heading
           className="md:max-w-md lg:max-w-2xl"
-          title="The Projects That Helped "
+          title="The Projects That Helped"
           subTitle="Me Grow..."
         />
-
-        <div className="flex flex-wrap gap-10 mb-10">
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  justify-between  gap-10 mb-10">
           {projectsData.map((item) => (
             
             <div
@@ -99,7 +99,7 @@ function Project() {
                 className="absolute inset-0.5 bg-n-8"
                 style={{ clipPath: "url(#benefits)" }}
               >
-                <div className="absolute inset-0 opacity-20 transition-opacity ">
+                <div className="absolute inset-0 opacity-15 transition-opacity ">
                   {item.imageUrl && (
                      <img
                         src={item.imageUrl}

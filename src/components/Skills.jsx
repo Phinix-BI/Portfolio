@@ -6,7 +6,7 @@ function Skills() {
 
     
   return (
-    <Section className="pt-[10rem] pb-[5rem] -mt-[5rem] " crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="skills">
+    <Section className="pt-[10rem]  pb-[3rem] lg:pb-[5rem] -mt-[5rem] " crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="skills">
         <div className='container'>
             <div>
                 <div className="text-center mx-auto justify-center">

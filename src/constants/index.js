@@ -113,8 +113,14 @@ import {
   },
   {
     id : 10,
-    title : '& More',
-    className : 'devicon-more',
+    title : 'Appwrite',
+    className : 'devicon-appwrite-plain colored',
+  },
+  {
+      id : 11,
+      title : '& More',
+      className : 'devicon-more',
+    
   }
 
   
@@ -210,19 +216,19 @@ export const socials = [
   {
     id: "0",
     title: "Discord",
-    iconUrl: discordBlack,
+    iconUrl: './ProjectImages/discord.png',
     url: "https://discordapp.com/users/phinix-bi",
   },
   {
     id: "1",
     title: "Twitter",
-    iconUrl: twitter,
+    iconUrl: './ProjectImages/twitter.png',
     url: "https://twitter.com/Phinix_BI",
   },
   {
     id: "2",
     title: "LinkedIn",
-    iconUrl: instagram,
+    iconUrl: './ProjectImages/linkedin.png',
     url: "https://www.linkedin.com/in/1biswajitdey/",
   },
   {
@@ -234,7 +240,7 @@ export const socials = [
   {
     id: "4",
     title: "Email",
-    iconUrl: facebook,
+    iconUrl: './ProjectImages/email.png',
     url: "#",
   },
 ];
