@@ -9,7 +9,7 @@ function Tools() {
         dark: ['#161b22', '#0a3069', '#0969da', '#0969da', '#b6e3ff']
     }
   return (
-    <Section className="pt-[5rem]  pb-[1rem] lg:pb-[5rem] -mt-[5rem] " crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="tools">
+    <Section className="pt-[5rem]  pb-[4rem] lg:pb-[5rem] -mt-[5rem] " crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="tools">
     <div className='container'> 
       <div className='my-4'>
                 

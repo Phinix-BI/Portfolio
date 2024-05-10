@@ -12,7 +12,7 @@ function Project() {
  
 
   return (
-    <Section className=" pt-[4rem] md:pt-[10rem] pb-[5rem] -mt-[5rem] " crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="projects">
+    <Section className=" pt-[4rem] md:pt-[10rem] pb-[2rem]  md:pb-[5rem] -mt-[5rem] " crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="projects">
       <div className="container relative z-2">
         <div className="justify-center text-center">
         <Heading

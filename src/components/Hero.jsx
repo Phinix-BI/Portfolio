@@ -19,7 +19,7 @@ const Hero = () => {
       customPaddings
       id="hero"
     >
-      <div className="container relative flex flex-col lg:flex-row items-center justify-center" ref={parallaxRef}>
+      <div className="container relative flex flex-col md:flex-row items-center justify-center" ref={parallaxRef}>
         <div className="max-w-[60rem] mx-auto mb-[3.875rem] md:mb-20 lg:mb-[6.25rem] lg:mr-10 text-center md:text-left">
           <div className="h2 mb-6">
             <span className="text-color-1">Hi</span>... There !
@@ -34,7 +34,7 @@ const Hero = () => {
                 />
               </span>
             </div>
-            <div className="mt-4 text-color-1 mr-5 h5  lg:h3">
+            <div className="mt-4 text-color-1 mr-5 h5 md:h6 lg:h3">
               <Type />
             </div>
           </div>
@@ -49,7 +49,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <Button href="/pricing" white>
+          <Button href="#about" white>
             Get started
           </Button>
         </div>
@@ -61,7 +61,7 @@ const Hero = () => {
               <div className="hidden md:block aspect-[33/40] rounded-b-[0.9rem] md:aspect-[688/650] lg:aspect-[1024/500]">
                 <img
                   src={programmer}
-                  className="w-1/2 mx-auto scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[2%] lg:-translate-y-[23%]"
+                  className="md:w-full md:h-[15rem] lg:h-[20rem]  mx-auto scale-[1.7] translate-y-[8%] md:scale-[1] md:-translate-y-[2%] lg:-translate-y-[23%]"
                   width={1024}
                   height={400}
                   alt="AI"
@@ -70,7 +70,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          {/* <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
+          <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
             <img
               src={heroBackground}
               className="w-full"
@@ -78,7 +78,7 @@ const Hero = () => {
               height={1800}
               alt="hero"
             />
-          </div> */}
+          </div>
           <BackgroundCircles />
         </div>
       </div>
