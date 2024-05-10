@@ -99,7 +99,7 @@ function Project() {
                 className="absolute inset-0.5 bg-n-8"
                 style={{ clipPath: "url(#benefits)" }}
               >
-                <div className="absolute inset-0 opacity-10 transition-opacity ">
+                <div className="absolute inset-0 opacity-20 transition-opacity ">
                   {item.imageUrl && (
                      <img
                         src={item.imageUrl}
