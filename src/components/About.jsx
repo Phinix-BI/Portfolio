@@ -2,6 +2,7 @@ import Section from "./Section";
 import cartoonavtar from '../assets/cartoonavtar.jpeg';
 import { useEffect, useState } from 'react';
 
+
 function About() {
     const [time, setTime] = useState(new Date());
 
@@ -20,7 +21,7 @@ function About() {
       minute: 'numeric',
       second: 'numeric',
     };
-  
+   
     const formattedTime = new Intl.DateTimeFormat('en-IN', options).format(time);
 
   return (
@@ -49,6 +50,7 @@ function About() {
             </p>
           </div>
         </div>
+
       </div>
     </Section>
   );

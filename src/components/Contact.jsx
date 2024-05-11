@@ -1,9 +1,42 @@
+import { useState } from 'react';
 import Button from './Button';
 import Input from './Input';
 import Section from './Section';
+import conf from '../conf/conf';
 
 
 function Contact() {
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+
+
+    const handleSubmit = async(e) => {
+
+        e.preventDefault();
+
+        const form = await document.forms['formName']
+
+        setName('');
+        setEmail('');
+        setMessage('');
+
+        const scriptURL = conf.gsheetUrl;
+       
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+           
+            console.log('Success!', response)
+        })
+        .catch(error => console.error('Error!', error.message))
+        .finally(() => {
+            
+            console.log('Form submitted');
+        })
+
+        
+    }
+
   return (
     <Section className="pt-[8rem] pb-[1rem] lg:pb-[5rem] -mt-[5rem] " crosses crossesOffset="lg:translate-y-[5.25rem]" customPaddings id="contact">
         <div className='container relative z-2'>
@@ -20,13 +53,13 @@ function Contact() {
                     </div>
                     <div className='w-full md:w-1/2  '>
                         {/* contact */}
-                        <form>
+                        <form name='formName'>
                             <div>
-                                <Input type = "text" placeholder="Name" id="UserName" title="Name "/>
-                                <Input type = "email" placeholder="Email" id="UserEmail" title="Email "/>
+                                <Input type = "text"  name="name" placeholder="Name" id="UserName" title="Name" value={name} onChange={(e)=> setName(e.target.value)}/>
+                                <Input type = "email" name="email" placeholder="Email" id="UserEmail" title="Email" value={email} onChange={(e)=> setEmail(e.target.value)}/>
                               
-                                <textarea id="message" rows="7" className="block outline-0 focus:ring-0 focus:ring-grey-400  p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Write your thoughts here..."></textarea>
-                               <div className='justify-end flex'> <Button white className="mt-4 md:mt-5" >Submit</Button></div>
+                                <textarea id="message" name="Message" value={message} onChange={(e)=> setMessage(e.target.value)} rows="7" className="block outline-0 focus:ring-0 focus:ring-grey-400  p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Write your thoughts here..."></textarea>
+                               <div className='justify-end flex'> <Button white className="mt-4 md:mt-5" onClick={handleSubmit} >Submit</Button></div>
                             </div>
                         </form>
 
