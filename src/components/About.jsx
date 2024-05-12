@@ -6,7 +6,7 @@ import conf from '../conf/conf';
 
 function About() {
     const [time, setTime] = useState(new Date());
-    const [status, setStatus] = useState('Offline');
+    const [status, setStatus] = useState('Fettching Status...');
 
     useEffect(() => {
       const interval = setInterval(() => {
