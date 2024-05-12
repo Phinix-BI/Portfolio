@@ -8,14 +8,21 @@ import Project from './components/Project'
 import Skills from './components/Skills'
 import Tools from './components/Tools'
 import Footer from './components/Footer'
-
+import Loader from './components/Loader'
+import { useState,useEffect } from 'react'
 function App() {
 
+    // eslint-disable-next-line no-unused-vars
+    const[isLoading,setIsLoading] = useState(true)
 
-  return (
+    useEffect(() => {
+      // Simulate an API call
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 2000);
+    }, []);
+  return !isLoading ? (
     <>
-   
-    
     <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
         
         <Header />
@@ -31,6 +38,8 @@ function App() {
       
       <ButtonGradient/>
     </>
+  ) : (
+    <Loader />
   )
 }
 
