@@ -1,10 +1,12 @@
 import Section from "./Section";
 import cartoonavtar from '../assets/cartoonavtar.jpeg';
 import { useEffect, useState } from 'react';
+import conf from '../conf/conf';
 
 
 function About() {
     const [time, setTime] = useState(new Date());
+    const [status, setStatus] = useState('Offline');
 
     useEffect(() => {
       const interval = setInterval(() => {
@@ -13,6 +15,20 @@ function About() {
   
       return () => clearInterval(interval);
     }, []);
+
+    useEffect(() => {
+      const getStaus = async () => {
+        const response = await fetch(`${conf.liveStatusUrl}api/v1/admin/get/status`,{
+          headers: {
+            'x-access-token': conf.liveStatusKey
+          }
+        });
+        const data = await response.json();
+        
+        setStatus(data[0].status);
+      }
+      getStaus();
+    }, [status]);
   
     const options = {
       timeZone: 'Asia/Kolkata',
@@ -37,7 +53,7 @@ function About() {
             </div>
             <div className="ml-5 ">
                 <div className="text-lg text-color-3 font-semibold">PHINIX-BI</div>
-              <div className="text-md text-color-7">Online</div>
+              <div className="text-md text-color-7">{status}</div>
               <div className="text-md text-green-300">
                 {formattedTime}
                </div>
