@@ -17,17 +17,20 @@ function About() {
     }, []);
 
     useEffect(() => {
-      const getStaus = async () => {
-        const response = await fetch(`${conf.liveStatusUrl}api/v1/admin/get/status`,{
+      const getStatus = async () => {
+        const response = await fetch(`${conf.liveStatusUrl}api/v1/admin/get/status`, {
+          method: "GET",
           headers: {
             'x-access-token': conf.liveStatusKey
           }
         });
+    
         const data = await response.json();
-        
-        setStatus(data[0].status);
-      }
-      getStaus();
+     
+        setStatus(data.status);
+      };
+    
+      getStatus();
     }, [status]);
   
     const options = {
